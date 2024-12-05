@@ -1,0 +1,27 @@
+[
+  {
+    "nombre": "vale",
+    "apellido": "garcia",
+    "edad": 20
+  },
+  {
+    "nombre": "bauti",
+    "apellido": "garcia",
+    "edad": 20
+  },
+  {
+    "nombre": "joaco",
+    "apellido": "gavernet",
+    "edad": 21
+  },
+  {
+    "nombre": "tibu",
+    "apellido": "barrios",
+    "edad": 21
+  },
+  {
+    "nombre": "dolo",
+    "apellido": "garro",
+    "edad": 24
+  }
+]
