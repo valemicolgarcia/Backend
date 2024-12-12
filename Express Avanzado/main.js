@@ -95,5 +95,49 @@ app.listen(PUERTO, () => {
     console.log(`Escuchando en el puerto: ${PUERTO}`);
 })
 
+//PUT: voy a recibir un parametro por id y voy a actualizar los datos del cliente:
+
+app.put("/clientes/:id", (req, res) => {
+    const { id } = req.params;
+    const { nombre, apellido } = req.body;
+    //encontrar el id que voy a buscar el indice del cliente a actualizar
+    const clienteIndex = clientes.findIndex(cliente => cliente.id == id);
+    //si lo encuentra me retorna el numero del indice del cliente buscado
+    //y si no lo encuentra, retorna indice que no es posible: -1
+
+    if (clienteIndex !== -1) {
+        //si el cliente existe y lo encontre lo voy a actualizar
+        clientes[clienteIndex].nombre = nombre;
+        clientes[clienteIndex].apellido = apellido;
+
+        //verificamos por consola que todo se actualizo.
+        console.log(clientes);
+        res.send({ status: "success", mensaje: "Cleinte actualizado" });
+    } else {
+        //si el cliente no se encuentra, devuelve un error
+        res.status(404).send({ status: "error", mensaje: "cliente no encontrado" });
+    }
+});
+
+
+
+//DELETE
+
+app.delete("/clientes/:id", (req, res) => {
+    let id = req.params.id;
+    //buscamos el indice:
+    const clienteIndex = clientes.findIndex(cliente = cliente.id === id);
+
+    if (cliente !== -1) {
+        //si el cliente existe lo elimino:
+        clientes.splice(clienteIndex, 1);
+        console.log(clientes);
+        res.send({ status: "success", mensaje: "Cliente eliminado" });
+
+    } else {
+        res.status(404).send({ status: "error", mensaje: "El cliente no existe" });
+    }
+})
+
 
 //USO DE POSTMAN
