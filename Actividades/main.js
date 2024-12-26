@@ -32,13 +32,15 @@ class ProductManager {
         this.products = []; //arreglo vacio
     }
     addProduct(title, description, price, img, code, stock) {
-        //validamos que se agregaron todos los campos
+
+        //validamos que se agregaron todos los campos (todos los campos son obligatorios)
         if (!title || !description || !price || !img || !code || !stock) {
             console.log("Todos los campos son obligatorios, falta alguno!");
             return; //para que no agregue un producto que este incompleto
         }
 
         //validamos que el codigo sea unico
+        //some lo que hace es verificar que al menos un elemento del arreglo cumple con la condicion especificada
         if (this.products.some(item => item.code === code)) {
             console.log("El codigo debe ser unico");
             return; //terminaria aca
@@ -46,7 +48,7 @@ class ProductManager {
 
         //Si pasamos las validaciones, ahora podemos crear el objeto
         const nuevoProducto = {
-            id: ++ProductManager.ultId, //el ++ atras aisgna y luego incrementa
+            id: ++ProductManager.ultId, //id autoincrementable
             title,
             description,
             price,
@@ -63,8 +65,10 @@ class ProductManager {
     getProducts() {
         return this.products;
     }
+
     getProductById(id) {
         const producto = this.products.find(item => item.id === id);
+        //find busca y devuelve el primer elemento de un array que cumple con la condicion especificada
 
         if (!producto) {
             console.error("Not found!");

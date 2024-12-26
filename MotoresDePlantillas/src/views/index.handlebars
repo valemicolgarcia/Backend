@@ -1,0 +1,24 @@
+<h2>Informacion Personal</h2>
+
+<p>Mi nombre es {{usuario.nombre}} </p>
+<p>Mi apellido es {{usuario.apellido}} </p>
+
+{{!--recorremos el array y por cada elemento creamos un array, se recorre con el each--}}
+
+{{#each arrayProductos}}
+<div class="card">
+    <p>Nombre: {{this.nombre}} </p>
+    <p>Descripcion: {{this.descripcion}} </p>
+    <p>Precio: {{this.precio}} </p>
+    <button> Comprar </button>
+</div>
+
+{{/each}}
+
+{{!--usamos condicionales, si es mayor de edad muestro sino no--}}
+{{!--ya le tenes que mandar el resultado del booleano, no se puede poner if (mayorEdad > 20)--}}
+{{#if usuario.mayorEdad }}
+<p>Es mayor de edad</p>
+{{else}}
+<p>Es menor de edad</p>
+{{/if}}
