@@ -1,0 +1,82 @@
+[
+    {
+        "nombre": "Ana Pérez",
+        "edad": 45,
+        "especialidad": "Matemáticas",
+        "email": "ana.perez@universidad.edu",
+        "telefono": "+54 9 11 5555-1234",
+        "departamento": "Ciencias Exactas"
+    },
+    {
+        "nombre": "Carlos Gómez",
+        "edad": 50,
+        "especialidad": "Física",
+        "email": "carlos.gomez@universidad.edu",
+        "telefono": "+54 9 11 5555-5678",
+        "departamento": "Ciencias Exactas"
+    },
+    {
+        "nombre": "Beatriz Fernández",
+        "edad": 39,
+        "especialidad": "Química",
+        "email": "beatriz.fernandez@universidad.edu",
+        "telefono": "+54 9 11 5555-9012",
+        "departamento": "Ciencias Exactas"
+    },
+    {
+        "nombre": "Daniel Rodríguez",
+        "edad": 55,
+        "especialidad": "Historia",
+        "email": "daniel.rodriguez@universidad.edu",
+        "telefono": "+54 9 11 5555-3456",
+        "departamento": "Ciencias Sociales"
+    },
+    {
+        "nombre": "Elena Torres",
+        "edad": 42,
+        "especialidad": "Literatura",
+        "email": "elena.torres@universidad.edu",
+        "telefono": "+54 9 11 5555-7890",
+        "departamento": "Ciencias Sociales"
+    },
+    {
+        "nombre": "Francisco Ramírez",
+        "edad": 48,
+        "especialidad": "Filosofía",
+        "email": "francisco.ramirez@universidad.edu",
+        "telefono": "+54 9 11 5555-2345",
+        "departamento": "Ciencias Sociales"
+    },
+    {
+        "nombre": "Gabriela López",
+        "edad": 35,
+        "especialidad": "Biología",
+        "email": "gabriela.lopez@universidad.edu",
+        "telefono": "+54 9 11 5555-6789",
+        "departamento": "Ciencias Naturales"
+    },
+    {
+        "nombre": "Hugo Martínez",
+        "edad": 47,
+        "especialidad": "Educación Física",
+        "email": "hugo.martinez@universidad.edu",
+        "telefono": "+54 9 11 5555-1235",
+        "departamento": "Deportes"
+    },
+    {
+        "nombre": "Isabel Suárez",
+        "edad": 41,
+        "especialidad": "Informática",
+        "email": "isabel.suarez@universidad.edu",
+        "telefono": "+54 9 11 5555-6780",
+        "departamento": "Tecnología"
+    },
+    {
+        "nombre": "Jorge Medina",
+        "edad": 52,
+        "especialidad": "Ingeniería",
+        "email": "jorge.medina@universidad.edu",
+        "telefono": "+54 9 11 5555-9013",
+        "departamento": "Ingeniería"
+    }
+]
