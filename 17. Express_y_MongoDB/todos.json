@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Comprar comestibles",
+        "description": "Ir al supermercado y comprar leche, pan y huevos.",
+        "completed": false
+    },
+    {
+        "title": "Hacer ejercicio",
+        "description": "Correr 5 kilómetros en el parque.",
+        "completed": true
+    },
+    {
+        "title": "Estudiar para el examen",
+        "description": "Repasar los apuntes de la clase de matemáticas.",
+        "completed": false
+    },
+    {
+        "title": "Llamar al médico",
+        "description": "Programar una cita para el chequeo anual.",
+        "completed": false
+    },
+    {
+        "title": "Leer un libro",
+        "description": "Leer el capítulo 3 de 'Cien años de soledad'.",
+        "completed": true
+    }
+]
