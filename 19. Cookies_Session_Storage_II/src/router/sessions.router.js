@@ -15,7 +15,8 @@ router.post("/register", async (req, res) => {
         }
         //creamos un nuevo usuario
         const nuevoUsuario = await UserModel.create({ first_name, last_name, email, password, age });
-        res.status(200).send("Usuario creado con exito");
+        res.redirect("/login");
+
 
     } catch (error) {
         console.log(error);
