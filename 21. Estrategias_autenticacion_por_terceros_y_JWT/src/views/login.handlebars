@@ -1,0 +1,20 @@
+<h1>Inicio de sesion</h1>
+
+<form action="/api/sessions/login" method="POST">
+
+
+    <label for="email">Email: </label>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label for="password">Contrasenia: </label>
+    <input type="password" name="password" required>
+    <br><br>
+
+    <button type="submit">Ingresar</button>
+
+</form>
+
+{{!-- boton para identificarme con github --}}
+
+<a href="/api/sessions/github"> Github </a>
