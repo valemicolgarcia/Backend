@@ -1,6 +1,10 @@
 //instalamos:npm i passport passport-local
 //el segundo es la estrategia elegida
 
+//JWT
+//npm install express jsonwebtoken
+
+
 //importamos los modulos:
 import passport from "passport";
 import local from "passport-local";

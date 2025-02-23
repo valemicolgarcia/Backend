@@ -9,6 +9,7 @@
 import express from "express";
 const app = express();
 const PUERTO = 3000;
+
 import session from "express-session";
 import { engine } from "express-handlebars";
 import MongoStore from "connect-mongo";
@@ -24,7 +25,8 @@ app.set("view engine", "handlebars");
 app.set("views", "./src/views")
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(session({
+
+/*app.use(session({
     //1. creamos una sesion con memory storage
     secret: "secretCoder",
     resave: true,
@@ -38,12 +40,14 @@ app.use(session({
     })
 
 }));
-
+*/
+/*
 //cambios de passport: una vez que sumas la estrategia local
 initializePassport();
 app.use(passport.initialize());
 app.use(passport.session());
 /////////////
+*/
 
 //rutas
 app.use("/", viewsRouter);
