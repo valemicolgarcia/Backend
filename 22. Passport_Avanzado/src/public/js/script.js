@@ -7,7 +7,7 @@ formulario.addEventListener("submit", (event) => {
     let pass = document.getElementById("pass").value;
 
     let obj = { usuario, pass };
-    fetch("", {
+    fetch("/login", {
         method: "POST",
         body: JSON.stringify(obj),
         headers: {
