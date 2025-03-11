@@ -2,6 +2,7 @@
 //Tecnica que vamos a utilizar: fork
 
 import express from "express";
+//corregit errores porque no anda, fijarse el repo
 const app = express();
 const PUERTO = 8080;
 
