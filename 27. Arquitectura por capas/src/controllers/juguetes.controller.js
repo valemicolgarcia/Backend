@@ -1,4 +1,4 @@
-//importamos el juguete services:
+// Importamos el Juguete Services:
 import JugueteService from "../services/juguete.services.js";
 const jugueteService = new JugueteService();
 
@@ -16,7 +16,9 @@ class JugueteController {
     try {
       const juguetes = await jugueteService.obtenerJuguetes();
       res.json(juguetes);
-    } catch (error) {}
+    } catch (error) {
+      res.status(500).json({ error: error.message });
+    }
   }
 }
 

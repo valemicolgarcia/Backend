@@ -4,14 +4,15 @@ const PUERTO = 8080;
 import "./database.js";
 import jugueteRouter from "./routes/juguetes.js";
 
-//middlewares
+//Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.send("hola");
+  res.send("Hola");
 });
 
-//rutas
+//Rutas:
+app.use("/juguetes", jugueteRouter);
 
-app.listen(PUERTO, () => console.log("todo funciona"));
+app.listen(PUERTO, () => console.log("Todo funciona"));

@@ -1,9 +1,10 @@
 import { Router } from "express";
 const router = Router();
-import JugueteController from "../controllers/juguetes.controller.js";
-const JugueteController = new JugueteController();
 
-//importar el controlador
+//Importar el controlador:
+import JugueteController from "../controllers/juguetes.controller.js";
+const jugueteController = new JugueteController();
+
 router.post("/", jugueteController.crearJuguete);
 router.get("/", jugueteController.obtenerJuguetes);
 

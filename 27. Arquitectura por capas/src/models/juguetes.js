@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+
 const jugueteSchema = new mongoose.Schema({
   nombre: String,
   categoria: String,
