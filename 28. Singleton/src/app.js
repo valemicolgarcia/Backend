@@ -22,9 +22,11 @@
 import express from "express";
 const app = express();
 const PUERTO = 8080;
+import BaseDatos from "./database.js";
+const instanciaDB = BaseDatos.getInstancia(); //singleton
 
 app.get("/", (req, res) => {
-  res.send("hola");
+  res.send("hola, clase de singleton y patrones");
 });
 
-app.listen(PUERTO, console.log("conectados"));
+app.listen(PUERTO, () => console.log("conectados desde app.listen"));
