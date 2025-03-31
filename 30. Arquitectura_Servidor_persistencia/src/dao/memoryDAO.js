@@ -1,4 +1,4 @@
-class MemoryDAO {
+class MemoryDao {
   constructor() {
     this.productos = [];
   }
@@ -6,7 +6,7 @@ class MemoryDAO {
     try {
       this.productos.push(datosProducto);
     } catch (error) {
-      throw new Error("Error al crear un producto en memoria");
+      throw new Error("Erorr al crear un producto en memoria");
     }
   }
 
@@ -14,8 +14,9 @@ class MemoryDAO {
     try {
       return this.productos;
     } catch (error) {
-      throw new Error("error al obtener los productos en memoria");
+      throw new Error("Erorr al obtener los productos de memoria");
     }
   }
 }
-export default MemoryDAO;
+
+export default MemoryDao;
